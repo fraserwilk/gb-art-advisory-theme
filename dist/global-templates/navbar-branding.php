@@ -13,14 +13,13 @@ if ( ! has_custom_logo() ) { ?>
 
 	<?php if ( is_front_page() && is_home() ) : ?>
 
-		<h1 class="navbar-brand mb-0">
+		<h1 class="navbar-brand">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
 				<?php bloginfo( 'name' ); ?>
 			</a>
 		</h1>
 
 	<?php else : ?>
-
 		<a class="navbar-brand navbar-expand-md" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
 			<?php bloginfo( 'name' ); ?>
 		</a>

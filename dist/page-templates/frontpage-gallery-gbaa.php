@@ -46,30 +46,35 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 												<?php $image = wp_get_attachment_image($images[$i], $size); ?>
 												<?php $caption = wp_get_attachment_caption($images[$i]); ?>
 												<?php $description = get_post_field('post_content', ($images[$i])); ?>
-												<?php $image = str_replace('<img', '<img class="img-fluid box" alt="' . $caption . '"', $image); ?>
-												<?php echo $image; ?>
-												<div class="caption position-absolute top-50 start-50 translate-middle title"><a href="<?php echo $description; ?>"><?php echo $caption; ?></a></div>
-											</div>
+												<a href="<?php echo $description; ?>">
+													<?php $image = str_replace('<img', '<img class="img-fluid box" alt="' . $caption . '"', $image); ?>
+													<?php echo $image; ?>
+												<div class="caption position-absolute top-50 start-50 translate-middle title"><?php echo $caption; ?></div>
+												</a>
 										<?php endif; ?>
-									
+									</div>									
 								</div>
 								
 							<?php endfor; ?>
 						</div>
+
+						
 						<div class="row">
 							<?php for ($i = 3; $i < count($images); $i++) : ?>
 								<div class="col-md-4 p-1">
 
-									<?php if(isset($images[$i])): ?>
-										<div class="image-caption-container image-hover-effect">
-											<?php $image = wp_get_attachment_image($images[$i], $size); ?>
-											<?php $caption = wp_get_attachment_caption($images[$i]); ?>
-											<?php $description = get_post_field('post_content', ($images[$i])); ?>
-											<?php $image = str_replace('<img', '<img class="img-fluid box" alt="' . $caption . '"', $image); ?>
-											<?php echo $image; ?>
-											<div class="caption position-absolute top-50 start-50 translate-middle title"><a href="<?php echo $description; ?>"><?php echo $caption; ?></a></div>
-										</div>
-									<?php endif; ?>
+										<?php if(isset($images[$i])): ?>
+											<div class="image-caption-container image-hover-effect">
+												<?php $image = wp_get_attachment_image($images[$i], $size); ?>
+												<?php $caption = wp_get_attachment_caption($images[$i]); ?>
+												<?php $description = get_post_field('post_content', ($images[$i])); ?>
+												<a href="<?php echo $description; ?>">
+													<?php $image = str_replace('<img', '<img class="img-fluid box" alt="' . $caption . '"', $image); ?>
+													<?php echo $image; ?>
+												<div class="caption position-absolute top-50 start-50 translate-middle title"><?php echo $caption; ?></div>
+												</a>
+										<?php endif; ?>
+									</div>
 								</div>
 							<?php endfor; ?>
 						</div>

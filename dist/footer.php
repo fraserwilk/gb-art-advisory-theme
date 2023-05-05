@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
-
+					<div class="site-info mx-auto text-center"><a href="tel:+61 (0)419 199 361">+61 (0)419 199 361</a>  •  <a href="mailto:georgie@gbartadvisory.com.au">georgie@gbartadvisory.com.au</a></div>
 					<div class="site-info mx-auto" style="width: 33ch;">
 
 						© 2023 <a href="https://gbartadvisory.com.au/">GB Art Advisory</a> • site by <a href="https://truweb.com.au/" target="_blank">truweb</a>

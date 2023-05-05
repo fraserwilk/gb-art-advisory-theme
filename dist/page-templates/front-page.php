@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						
 						<div class="carousel-inner">
 							<?php foreach ($image_ids as $key => $image_id) : ?>
-								<div class="carousel-item <?php echo ($key == 0) ? 'active' : ''; ?>" data-bs-interval="10000">
+								<div class=" <?php echo ($key == 0) ? 'active' : ''; ?>" data-bs-interval="10000">
 									<?php echo wp_get_attachment_image($image_id, 'full', false, array('class' => 'd-block w-100')); ?>
 									
 								</div>

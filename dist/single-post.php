@@ -18,7 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<main class="site-main" id="main">
+			<main class="site-main col-md-8 offset-md-2" id="main">
+
 
 				<?php
 				while ( have_posts() ) {

@@ -19,7 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</h2>
 
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<!-- <div class="<?php echo esc_attr( $container ); ?>"> -->
+	<div class="container">
 
 		<!-- GBAA site branding in the menu -->
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
@@ -49,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				'theme_location'  => 'primary',
 				'container_class' => 'collapse navbar-collapse justify-content-center',
 				'container_id'    => 'navbarNavDropdown',
-				'menu_class'      => 'navbar-nav',
+				'menu_class'      => 'navbar-nav text-end text-light',
 				'fallback_cb'     => '',
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,
