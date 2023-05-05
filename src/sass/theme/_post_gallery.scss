@@ -1,0 +1,37 @@
+// Arranges the Post mosaic display
+
+.mosaic {
+    columns: 2 200px;
+    gap: 40px 40px;
+    div {
+      width: 150px;
+      // background: #EC985A;
+      // color: white;
+      margin: 20px 0rem 0rem 0;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    } 
+    @for $i from 1 through 36 { 
+      div:nth-child(#{$i}) {
+        // $h: (random(400) + 100) + px;
+        $h: auto;
+        height: $h;
+        // line-height: $h;
+      }
+    }
+  }
+
+.mosaic-caption {
+    color: $light;
+}
+
+.mosaic-item {
+  -webkit-box-shadow: 10px 10px 6px -6px #777;
+     -moz-box-shadow: 10px 10px 6px -6px #777;
+          box-shadow: 10px 10px 6px -6px #777;
+}
+
+.artist {
+  font-size: 0.7em;
+}

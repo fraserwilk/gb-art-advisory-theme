@@ -1,0 +1,73 @@
+
+
+p {
+    font-weight: 300;
+}
+
+// thin green line above/below navbar
+#main-nav {
+	border-top: solid $secondary 1px;
+    border-bottom: solid $secondary 1px;
+    color: #fff;
+}
+
+// main menu text colour
+#main-menu li a {
+	color: #ffffff;
+}
+
+
+// open submenu when mouse hovering the parent menu item.
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
+    display: block; 
+}
+
+// hide caret for two+ level menus
+.navbar-nav .dropdown-toggle .caret { display:none; }
+
+
+// page footer
+.site-footer  {
+    font-size: calc(0.7rem + 0.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    .site-footer  {
+      font-size: 1rem;
+    }
+  }
+
+.site-footer a {
+    box-shadow: inset 0 0 0 0 $secondary;
+    color: $secondary;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.site-footer a:hover {
+    box-shadow: inset 130px 0 0 0 $secondary;
+    color: white;
+}
+
+// card styling
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+    background-color: $gbaa-green-faded;
+    transition: 0.3s;
+ }
+
+ // Formatting for top level Post Listings on category pages
+ .gb-post-list h2 {
+	font-size: 1.2em;
+}
+
+.gb-post-list a {
+	text-decoration: none;
+}
+
+.gb-post-list img {
+	border: solid #000 1px;
+}
