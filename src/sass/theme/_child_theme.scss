@@ -16,6 +16,10 @@ p {
 	color: #ffffff;
 }
 
+#navbarNavDropdown ul .dropdown-menu li a {
+	color: #000;
+}
+
 
 // open submenu when mouse hovering the parent menu item.
 ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
