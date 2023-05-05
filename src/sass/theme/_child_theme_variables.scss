@@ -1,0 +1,17 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+
+$primary: #636363;  // the primary brand colour.
+$secondary: #69AA9C; // GBAA's green colour
+$white:    #fff !default;
+
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+
+$gbaa-green-faded: #E1EEEB; // GBAA's faded green colour for card backgrounds
+
+$border-color: $gbaa-green-faded;
+

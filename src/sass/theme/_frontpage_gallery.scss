@@ -1,0 +1,60 @@
+
+// front page boxes & hover effects
+.image-hover-effect img.box {
+    transition: all 0.5s ease-in-out;
+}
+
+.image-hover-effect:hover img.box {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+
+.image-caption-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom:0px;
+}
+
+.image-caption-container img {
+    display: block;
+    object-fit: cover;
+}
+
+.image-caption-container .caption {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    // height:2em;
+    position:relative;
+    overflow:hidden;
+    z-index: 1;
+}
+
+.image-caption-container .caption a {
+    text-decoration: none;
+    color: $light;
+}
+
+ 
+.image-caption-container .box {
+    text-align:center;
+    // background-repeat:no-repeat;
+    // background-position:center;
+    //object-fit: cover;
+    height:40vh;
+    position:relative;
+}
+  
+ 
+.image-caption-container .title {
+    text-transform:uppercase;
+    // font-weight:bold;
+    color: $light;
+    // letter-spacing:0.1rem;
+    font-size:2em;
+    margin-bottom:20px;
+    background-color:rgba(0,0,0,0.15);
+    width: 100%;
+}
