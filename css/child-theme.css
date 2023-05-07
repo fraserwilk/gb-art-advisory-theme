@@ -14112,10 +14112,6 @@ p {
   color: #ffffff;
 }
 
-#navbarNavDropdown ul .dropdown-menu li a {
-  color: #000;
-}
-
 ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
   display: block;
 }
