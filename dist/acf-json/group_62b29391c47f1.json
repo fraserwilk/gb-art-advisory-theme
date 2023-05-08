@@ -1,0 +1,85 @@
+{
+    "key": "group_62b29391c47f1",
+    "title": "Artistic Input",
+    "fields": [
+        {
+            "key": "field_62b293c823db9",
+            "label": "Architect",
+            "name": "architect",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter Architect's business name as it appears on their website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Architect:",
+            "append": ""
+        },
+        {
+            "key": "field_62b2942f23dba",
+            "label": "Designer",
+            "name": "designer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter Designer's business name as it appears on their website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Designer:",
+            "append": ""
+        },
+        {
+            "key": "field_62b2946223dbb",
+            "label": "Photographer",
+            "name": "photographer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter Photographer's business name here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Photographer:",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Details for Photographer, Designer and\/or Architect",
+    "show_in_rest": 0,
+    "modified": 1683503303
+}
