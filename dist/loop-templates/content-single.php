@@ -82,7 +82,7 @@ defined( 'ABSPATH' ) || exit;
 												<?php $description = get_post_field('post_content', ($images[$i])); ?>
 												<?php $image = str_replace('<img', '<img class="img-fluid" alt="' . $caption . '"', $image); ?>
 												
-												<?php echo '<a href="' . $imageurl . '"' . 'data-toggle="lightbox" data-gallery="post-gallery">'; ?>
+												<?php echo '<a href="' . $imageurl . '"' . 'data-toggle="lightbox">'; ?>
 												<?php echo $image; ?>
 												<div class="mosaic-caption position-absolute bottom-0 start-50 translate-middle bg-dark bg-opacity-50"><?php echo $caption; ?></div>
 												</a>

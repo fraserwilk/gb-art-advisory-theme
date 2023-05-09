@@ -14112,6 +14112,10 @@ p {
   color: #ffffff;
 }
 
+#navbarNavDropdown ul .dropdown-menu li a {
+  color: #000;
+}
+
 ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
   display: block;
 }
@@ -14741,6 +14745,14 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 .artist {
   font-size: 0.7em;
+}
+
+.carousel-control-next-icon::after {
+  display: none;
+}
+
+.carousel-control-prev-icon::after {
+  display: none;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

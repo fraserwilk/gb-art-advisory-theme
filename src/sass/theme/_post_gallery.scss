@@ -35,3 +35,12 @@
 .artist {
   font-size: 0.7em;
 }
+
+// remove outline from carousel icons
+.carousel-control-next-icon::after {
+	display: none;
+}
+
+.carousel-control-prev-icon::after {
+	display: none;
+}
