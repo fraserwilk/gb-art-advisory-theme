@@ -14577,6 +14577,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   overflow: hidden;
   margin-bottom: 0px;
 }
+.image-caption-container .img-fluid {
+  width: 900px;
+}
 
 .image-caption-container img {
   display: block;

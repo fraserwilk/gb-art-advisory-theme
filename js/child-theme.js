@@ -1,6 +1,6 @@
 /*!
   * Understrap v1.2.0 (https://understrap.com)
-  * Copyright 2013-2023 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
+  * Copyright 2013-2024 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
   * Licensed under GPL-3.0 (undefined)
   */
 (function (global, factory) {
@@ -11152,7 +11152,7 @@
 	      classes += ' position-absolute w-100 translate-middle top-50 start-50';
 	    }
 	    const html = `
-			<div id="lightboxCarousel-${this.hash}" class="${classes}" data-bs-ride="false" data-bs-interval="${this.carouselOptions.interval}">
+			<div id="lightboxCarousel-${this.hash}" class="${classes}" data-bs-ride="carousel" data-bs-interval="${this.carouselOptions.interval}">
 				<div class="carousel-inner">
 					${slidesHtml}
 				</div>

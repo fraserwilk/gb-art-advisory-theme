@@ -14,6 +14,10 @@
     position: relative;
     overflow: hidden;
     margin-bottom:0px;
+
+    .img-fluid {
+        width: 900px;
+    }
 }
 
 .image-caption-container img {
