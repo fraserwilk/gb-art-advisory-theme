@@ -14743,7 +14743,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .mosaic-item {
-  box-shadow: 10px 10px 6px -6px #777;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .artist {
@@ -14756,6 +14756,17 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 .carousel-control-prev-icon::after {
   display: none;
+}
+
+#archive-wrapper .page-title {
+  padding: 2rem 0;
+}
+#archive-wrapper .entry-footer {
+  padding-bottom: 3rem;
+}
+#archive-wrapper .img-border {
+  border: solid 1px #212529;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

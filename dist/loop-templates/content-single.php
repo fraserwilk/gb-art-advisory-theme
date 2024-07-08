@@ -66,32 +66,35 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<div class="entry-content">
+		<?php 
+		the_content();
+		?>
 
-						<?php 
-						$images = get_field('post_gallery');
-						$size = 'full'; // (thumbnail, medium, large, full or custom size)
-						if( $images ): ?>
-							<div class="mosaic mt-4">
-								<?php for ($i = 0; $i < count($images); $i++) : ?>
-													
-										<?php if(isset($images[$i])): ?>
-											<div class="mosaic-item image-caption-container image-hover-effect border border-dark">
-												<?php $image = wp_get_attachment_image($images[$i], $size); ?>
-												<?php $imageurl = wp_get_attachment_image_url($images[$i], $size); ?>
-												<?php $caption = wp_get_attachment_caption($images[$i]); ?>
-												<?php $description = get_post_field('post_content', ($images[$i])); ?>
-												<?php $image = str_replace('<img', '<img class="img-fluid" alt="' . $caption . '"', $image); ?>
-												
-												<?php echo '<a href="' . $imageurl . '"' . 'data-toggle="lightbox">'; ?>
-												<?php echo $image; ?>
-												<div class="mosaic-caption position-absolute bottom-0 start-50 translate-middle bg-dark bg-opacity-50"><?php echo $caption; ?></div>
-												</a>
-											</div>
-										<?php endif; ?>
-								<?php endfor; ?>
+		<?php 
+		$images = get_field('post_gallery');
+		$size = 'full'; // (thumbnail, medium, large, full or custom size)
+		if( $images ): ?>
+			<div class="mosaic mt-4">
+				<?php for ($i = 0; $i < count($images); $i++) : ?>
 									
+						<?php if(isset($images[$i])): ?>
+							<div class="mosaic-item image-caption-container image-hover-effect border border-dark">
+								<?php $image = wp_get_attachment_image($images[$i], $size); ?>
+								<?php $imageurl = wp_get_attachment_image_url($images[$i], $size); ?>
+								<?php $caption = wp_get_attachment_caption($images[$i]); ?>
+								<?php $description = get_post_field('post_content', ($images[$i])); ?>
+								<?php $image = str_replace('<img', '<img class="img-fluid" alt="' . $caption . '"', $image); ?>
+								
+								<?php echo '<a href="' . $imageurl . '"' . 'data-toggle="lightbox">'; ?>
+								<?php echo $image; ?>
+								<div class="mosaic-caption position-absolute bottom-0 start-50 translate-middle bg-dark bg-opacity-50"><?php echo $caption; ?></div>
+								</a>
 							</div>
 						<?php endif; ?>
+				<?php endfor; ?>
+					
+			</div>
+		<?php endif; ?>
 		
 
 			
